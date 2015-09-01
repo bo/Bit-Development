@@ -38,6 +38,7 @@ gulp.task('scripts', function () {
 gulp.task('watch', function() {
     gulp.watch('./resources/styles/**/**/*.scss', ['sass']);
     gulp.watch('./resources/scripts/*.js', ['scripts']);
+    gulp.watch('./resources/images/**', ['images']);
 });
 
 gulp.task('develop', function () {
