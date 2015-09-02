@@ -5,6 +5,8 @@
  .masthead {
   background: rgba(255,255,255,.75);
   z-index: 999;
+  width: 100%;
+  left: 0;
  }
 
  .nav {
@@ -16,6 +18,11 @@
   margin-top: 10px;
   color: $gray;
   margin-bottom: 10px;
+}
+
+.masthead-inner {
+  width: 1015px;
+  margin: 0 auto;
 }
 
 .masthead-nav > li {
