@@ -6,10 +6,10 @@ var config = {
 	development: {
 		root: rootPath,
 		app: {
-			name: 'esk'
+			name: 'bitdev'
 		},
-		port: 3000,
-		db: 'mongodb://localhost/esk-development',
+		port: 8080,
+		db: 'mongodb://localhost/bitdev-development',
 		email: {
 			receipant: "myemail@gmail.com",
 			service: 'Gmail',
@@ -23,10 +23,10 @@ var config = {
 	production: {
 		root: rootPath,
 		app: {
-			name: 'esk'
+			name: 'bitdev'
 		},
 		port: 3000,
-		db: 'mongodb://localhost/esk-development',
+		db: 'mongodb://localhost/bitdev-live',
 		email: {
 			receipant: "myemail@gmail.com",
 			service: 'Gmail',
