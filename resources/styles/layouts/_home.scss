@@ -17,8 +17,8 @@ a:hover {
 .btn-default:focus {
   color: $darkgray;
   text-shadow: none; /* Prevent inheritence from `body` */
-  background-color: #fff;
-  border: 1px solid #fff;
+  background-color: $white;
+  border: 1px solid $white;
 }
 
 /* Defining fonts for elements */
@@ -31,6 +31,17 @@ body, p {
   font-family: 'Merriweather', Arial, serif;
 }
 
+h1 {
+  font-size: 6em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+strong {
+  color: $mainred;
+}
 
 /*
  * Base structure
@@ -40,13 +51,13 @@ html,
 body {
   height: 100%;
   background-color: $darkgray;
-  background-image: url('/dist/images/bg.jpg');
-  background-size: cover;
 }
 
 body {
   color: $white;
   text-align: center;
+  background-image: url('/dist/images/bg.jpg');
+  background-size: cover;
   letter-spacing: -1.4px;
 }
 
@@ -86,6 +97,7 @@ body {
 .team-container {
   height: 100%;
   background: $mainred;
+  padding-bottom: 40px;
 
   .inner {
     padding: 15px;
@@ -128,6 +140,7 @@ body {
 
 .contact-cover {
   height: 50vh;
+  padding: 40px 0;
   background: $lightgray;
   
   .contact-container {
