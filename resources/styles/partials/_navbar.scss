@@ -41,13 +41,14 @@
   color: $darkgray;
   text-transform: uppercase;
   border-bottom: 2px solid transparent;
+  transition: ease-in-out 0.2s;
 }
 
 .masthead-nav > li > a:hover,
 .masthead-nav > li > a:focus {
   background-color: transparent;
-  border-bottom-color: #a9a9a9;
-  border-bottom-color: rgba(255,255,255,.25);
+  border-bottom-color: $darkgray;
+  transition: ease-in-out 0.2s;
 }
 
 .masthead-nav > .active > a,

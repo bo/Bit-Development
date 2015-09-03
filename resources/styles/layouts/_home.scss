@@ -11,14 +11,40 @@ a:hover {
   letter-spacing: -1px;
 }
 
+@mixin shadow($level: 1) {
+  @if $level == 1 {box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);} 
+  @else if $level == 2 {box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);}
+  @else if $level == 3 {box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);}
+  @else if $level == 4 {box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);}
+  @else if $level == 5 {box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);}
+}
+
+@mixin text-shadow($level: 1) {
+  @if $level == 1 {text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);} 
+  @else if $level == 2 {text-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);}
+  @else if $level == 3 {text-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);}
+  @else if $level == 4 {text-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);}
+  @else if $level == 5 {text-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);}
+}
+
 /* Custom default button */
 .btn-default,
 .btn-default:hover,
 .btn-default:focus {
-  color: $darkgray;
+  color: $white;
   text-shadow: none; /* Prevent inheritence from `body` */
-  background-color: $white;
-  border: 1px solid $white;
+  border-radius: 5px;
+  background-color: $mainred;
+  padding: 10px 15px;
+  margin: 10px;
+  font-weight: 600;
+  font-size: 1.2em;
+  float: right;
+  border: 1px solid $hoverred;
+  @include shadow(1);
+  &:hover {
+    @include shadow(2);
+  }
 }
 
 /* Defining fonts for elements */
@@ -92,6 +118,10 @@ body {
 
 .cover-block {
   margin-top: 22vh;
+
+  img {
+    filter: invert(100%);
+  }
 }
 
 .team-container {
@@ -115,6 +145,12 @@ body {
       background: $lightgray;
       color: $darkgray;
       box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+      
+      .portfolio-link {
+        color: $mainred;
+        font-size: 1.4em;
+        border-bottom: 1px solid $mainred;
+      }
 
       img {
         max-width: 100%;
@@ -139,7 +175,7 @@ body {
 }
 
 .contact-cover {
-  height: 50vh;
+  min-height: 50vh;
   padding: 40px 0;
   background: $lightgray;
   
@@ -154,22 +190,6 @@ body {
   }
 
 
-}
-
-@mixin shadow($level: 1) {
-  @if $level == 1 {box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);} 
-  @else if $level == 2 {box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);}
-  @else if $level == 3 {box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);}
-  @else if $level == 4 {box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);}
-  @else if $level == 5 {box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);}
-}
-
-@mixin text-shadow($level: 1) {
-  @if $level == 1 {text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);} 
-  @else if $level == 2 {text-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);}
-  @else if $level == 3 {text-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);}
-  @else if $level == 4 {text-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);}
-  @else if $level == 5 {text-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);}
 }
 
 .box-shadow {
