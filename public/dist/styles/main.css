@@ -1,0 +1,285 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic);
+html, body {
+  background-color: #fff; }
+
+/* Our colors */
+/* our reddish pink color */
+/* Fonts */
+/*!
+Animate.css - http://daneden.me/animate
+Licensed under the MIT license - http://opensource.org/licenses/MIT
+Copyright (c) 2015 Daniel Eden
+*/
+body {
+  -webkit-backface-visibility: hidden; }
+
+.animated {
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both; }
+  .animated.infinite {
+    animation-iteration-count: infinite; }
+  .animated.hinge {
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-duration: 2s; }
+  .animated.bounceIn, .animated.bounceOut {
+    -webkit-animation-duration: 0.75s;
+    -moz-animation-duration: 0.75s;
+    -o-animation-duration: 0.75s;
+    animation-duration: 0.75s; }
+  .animated.flipOutX, .animated.flipOutY {
+    -webkit-animation-duration: 0.75s;
+    -moz-animation-duration: 0.75s;
+    -o-animation-duration: 0.75s;
+    animation-duration: 0.75s; }
+
+/*
+ * Header
+ */
+.masthead {
+  background: rgba(255, 255, 255, 0.75);
+  z-index: 999;
+  width: 100%;
+  left: 0; }
+
+.nav {
+  margin-top: 20px;
+  padding: 5px; }
+
+.masthead-brand {
+  margin-top: 10px;
+  color: #555;
+  margin-bottom: 10px; }
+
+.masthead-inner {
+  width: 1015px;
+  margin: 0 auto; }
+
+.masthead-nav > li {
+  display: inline-block; }
+
+.masthead-nav > li + li {
+  margin-left: 20px; }
+
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #333;
+  text-transform: uppercase;
+  border-bottom: 2px solid transparent;
+  transition: ease-in-out 0.2s; }
+
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #333;
+  transition: ease-in-out 0.2s; }
+
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #555;
+  border-bottom-color: #555; }
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left; }
+
+  .masthead-nav {
+    float: right; } }
+/*
+ * Globals
+ */
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #edf1f2;
+  letter-spacing: -1px; }
+
+/* Mixin for text and box shadow, use @include shadow(1); */
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #edf1f2;
+  text-shadow: none;
+  /* Prevent inheritence from `body` */
+  border-radius: 5px;
+  background-color: #ff686b;
+  padding: 10px 15px;
+  margin: 10px;
+  font-weight: 600;
+  font-size: 1.2em;
+  float: right;
+  border: 1px solid #FF8587;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+  .btn-default:hover,
+  .btn-default:hover:hover,
+  .btn-default:focus:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+
+/* Defining fonts for elements */
+a, h1, h2, h3, h4, h5, h6, title, button {
+  font-family: "Quicksand", Arial, sans-serif; }
+
+body, p {
+  letter-spacing: 0;
+  font-family: 'Merriweather', Arial, serif; }
+
+h1 {
+  font-size: 6em; }
+
+h2 {
+  font-size: 3em; }
+
+strong {
+  color: #ff686b; }
+
+/*
+ * Base structure
+ */
+html,
+body {
+  height: 100%;
+  background-color: #333; }
+
+body {
+  color: #edf1f2;
+  text-align: center;
+  background-image: url("/dist/images/bg.jpg");
+  background-size: cover;
+  letter-spacing: -1.4px; }
+
+.cover-main {
+  width: 100%;
+  height: 100vh;
+  /* For at least Firefox */
+  min-height: 100vh;
+  -webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5); }
+  .cover-main .cover-main-inner {
+    vertical-align: top; }
+    .cover-main .cover-main-inner .cover-container {
+      margin-right: auto;
+      margin-left: auto; }
+      .cover-main .cover-main-inner .cover-container .cover {
+        padding: 0 20px; }
+      .cover-main .cover-main-inner .cover-container .cover .btn-lg {
+        padding: 10px 20px;
+        font-weight: bold; }
+
+.cover-block {
+  margin-top: 22vh; }
+  .cover-block img {
+    filter: invert(100%); }
+
+.team-container {
+  height: 100%;
+  background: #ff686b;
+  padding-bottom: 40px; }
+  .team-container .inner {
+    padding: 15px; }
+  .team-container .team-members {
+    max-width: 1015px;
+    margin: 0 auto;
+    text-align: left; }
+    .team-container .team-members .row {
+      max-width: 100%;
+      padding: 10px;
+      margin: 15px;
+      background: #edf1f2;
+      color: #333;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+      .team-container .team-members .row .portfolio-link {
+        color: #ff686b;
+        font-size: 1.4em;
+        border-bottom: 1px solid #ff686b; }
+      .team-container .team-members .row img {
+        max-width: 100%; }
+
+.bit {
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  bottom: 0;
+  right: 0;
+  transition: ease-in-out 0.4s; }
+  .bit:hover {
+    transition: ease-in-out 0.4s;
+    right: 100px;
+    bottom: 150px; }
+
+.contact-cover {
+  min-height: 50vh;
+  padding: 40px 0;
+  background: #edf1f2; }
+  .contact-cover .contact-container {
+    max-width: 1015px;
+    margin: 0 auto; }
+  .contact-cover #map {
+    max-width: 100%;
+    height: 50vh; }
+
+.box-shadow {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+  .box-shadow:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+
+.shadow {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+  max-width: 1015px;
+  margin: 0 auto; }
+
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important; }
+
+/*
+ * Affix and center
+ */
+@media (max-width: 992px) {
+  .team-members {
+    max-width: 100%; } }
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0; }
+
+  .mastfoot {
+    position: fixed;
+    bottom: 0; }
+
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle; }
+
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%;
+    /* Must be percentage or pixels for horizontal alignment */ } }
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; } }
+.midnightHeader.red-hover {
+  filter: saturate(100%);
+  background: #fff; }
