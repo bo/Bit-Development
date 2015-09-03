@@ -87,14 +87,14 @@
         
             function init() {
                 var mapOptions = {
-                    zoom: 11,
-                    center: new google.maps.LatLng(40.6700, -73.9400),
-                    styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#333"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#222"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":0}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#C48A71"},{"visibility":"on"},{"saturation":"0"},{"lightness":"0"},{"gamma":"1.00"}]}]
+                    zoom: 14,
+                    center: new google.maps.LatLng(52.389760, 4.851040),
+                    styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#333"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#222"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":0},{"lightness":-10}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#ff686b"},{"visibility":"on"},{"saturation":"0"},{"lightness":"0"},{"gamma":"1.00"}]}]
                 };
                 var mapElement = document.getElementById('map');
                 var map = new google.maps.Map(mapElement, mapOptions);
                 var marker = new google.maps.Marker({
-                    position: new google.maps.LatLng(40.6700, -73.9400),
+                    position: new google.maps.LatLng(52.389760, 4.851040),
                     map: map,
                     title: 'Bitdev!'
                 });

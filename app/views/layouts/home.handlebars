@@ -19,7 +19,7 @@
 
 <div class="inner cover">
   <div class="cover-block">
-    <h1 class="cover-heading shadow"><img src="/dist/images/logo.png" alt=""></h1>
+    <h1 class="cover-heading shadow"><img src="/dist/images/logo-white.png" width="200" alt=""></h1>
     <p class="lead shadow">Wij zijn een klein startend media bedrijf dat zich focust op het maken van interactieve websites, apps en webshops. Wij regelen alles, van start tot het einde. Zo hoeft u als klant zich <strong>nergens</strong> zorgen over te maken!</p>
     <p class="lead">
       <a href="#" class="btn btn-lg btn-default">\/</a>
@@ -27,10 +27,8 @@
   </div>
 </div>
 
-<div class="mastfoot">
-  <div class="inner">
-    <p>DOWN</a>.</p>
-  </div>
+<div class="bit">
+  <img src="/dist/images/bit.png" alt="Bit!">
 </div>
 
 </div>
@@ -88,14 +86,55 @@
 </div>
 
 <div class="contact-cover">
-    
-    <div class="col-md-8"> yolo</div>
-    <div class="col-md-4 nopadding">
+  <div class="contact-container">
+    <div class="row">
+      <div class="col-md-6">
+        
+        <fieldset id="contact_form">
+        <legend>Contact</legend>
+            <div id="result"></div>
+            <div class="row">
+             <div class="col-lg-6">
 
-    <div id="map"></div>
+            <div class="input-group-lg">
+              <span class="input-group-addon">Naam</span>
+              <input type="text" class="form-control" name="name" id="name" placeholder="Enter Your Name" />
+            </div>
+            
+            <div class="input-group-lg">
+              <span class="input-group-addon">Email adres</span>
+              <input type="text" class="form-control" name="email" id="email" placeholder="Enter Your Email" />
+            </div>
 
+          </div>
+          <div class="col-lg-6">
+            
+            <div class="input-group-lg">
+              <span class="input-group-addon">Mobiel</span>
+              <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone Number" />
+            </div>
+            
+            <div class="input-group-lg">
+              <span class="input-group-addon">Bericht</span>
+              <textarea name="message" class="form-control" id="message" placeholder="Enter Your Name"></textarea>
+            </div>
+
+            </div>
+
+            <button class="submit_btn" id="submit_btn">Submit</button>
+
+            </div>
+        </fieldset>
+
+      </div>
+      <div class="col-md-6">
+
+      <div id="map"></div>
+
+      </div>
     </div>
 
+  </div>
 </div>
 
 
