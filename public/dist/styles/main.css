@@ -377,6 +377,7 @@ body {
 
 .team-container {
   height: 100%;
+  z-index: 10;
   background: #ff686b;
   padding-bottom: 40px; }
   .team-container .inner {
@@ -401,6 +402,7 @@ body {
 
 .bit {
   position: fixed;
+  z-index: 9;
   width: 160px;
   height: 160px;
   bottom: 0;
