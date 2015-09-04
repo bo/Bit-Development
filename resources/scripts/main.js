@@ -18,3 +18,13 @@ $("#click-down").click(function() {
         scrollTop: $("#team").offset().top
     }, 1000);
 });
+
+var header = new Waypoint({
+  element: document.getElementById('team'),
+  handler: function() {
+   $(".masthead").css({"background-color": "rgba(255,255,255,.75"});
+    $(".masthead-nav > li > a, .masthead-brand").css({"color": "#000"});
+    $(".masthead-nav > .active > a").css({"color": "#000"}).css({"border-bottom-color": "#000"});
+  },
+  offset: '90%'
+})

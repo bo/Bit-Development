@@ -163,16 +163,16 @@ body {
 
 .bit {
   position: fixed;
-  width: 200px;
-  height: 200px;
+  width: 160px;
+  height: 160px;
   bottom: 0;
-  right: 0;
+  right: -60px;
   transition: ease-in-out 0.4s;
 
   &:hover {
     transition: ease-in-out 0.4s;
-    right: 100px;
-    bottom: 150px;
+    right: 0px;
+    bottom: 40px;
   }
 }
 

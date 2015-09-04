@@ -3,7 +3,7 @@
  * Header
  */
  .masthead {
-  background: rgba(255,255,255,.75);
+  background: rgba(255,255,255,.0);
   z-index: 999;
   width: 100%;
   left: 0;
@@ -16,12 +16,12 @@
 
 .masthead-brand {
   margin-top: 10px;
-  color: $gray;
+  color: $white;
   margin-bottom: 10px;
 }
 
 .masthead-inner {
-  width: 1015px;
+  max-width: 1015px;
   margin: 0 auto;
 }
 
@@ -38,7 +38,8 @@
   padding-left: 0;
   font-size: 16px;
   letter-spacing: 1px;
-  color: $darkgray;
+  color: $white;
+  font-weight: 600;
   text-transform: uppercase;
   border-bottom: 2px solid transparent;
   transition: ease-in-out 0.2s;
@@ -47,15 +48,14 @@
 .masthead-nav > li > a:hover,
 .masthead-nav > li > a:focus {
   background-color: transparent;
-  border-bottom-color: $darkgray;
+  border-bottom-color: $white;
   transition: ease-in-out 0.2s;
 }
 
 .masthead-nav > .active > a,
 .masthead-nav > .active > a:hover,
 .masthead-nav > .active > a:focus {
-  color: $gray;
-  border-bottom-color: $gray;
+  border-bottom-color: $white;
 }
 
 @media (min-width: 768px) {

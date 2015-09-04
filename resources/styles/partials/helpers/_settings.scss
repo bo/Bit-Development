@@ -17,6 +17,10 @@ $base-timing-function-in-out	: ease-in-out !default;
 $base-distance					: 10px !default; 		// used in fade, shake and bounce modules
 $base-distance-big				: 1000px !default;       // used in fadeBig and bounce modules
 
+// extra time for animations
+
+.delay-1 {animation-delay: 0.2s;}.delay-2 {animation-delay: 0.4s;}.delay-3 {animation-delay: 0.6s;}.delay-4 {animation-delay: 1s;}.delay-5 {animation-delay: 1.5s;}.delay-6 {animation-delay: 2s;}
+
 
 // Rotate module settings
 $rotate-degrees 				: 90deg !default;
@@ -48,10 +52,10 @@ $hinge-translate 				: 700px !default;
 //==================================================================================================//
 
 // Fade Enter
-$use-fadeIn 			:	false !default;
+$use-fadeIn 			:	true !default;
 $use-fadeInUp 			:	false !default;
 $use-fadeInUpBig 		:	false !default;
-$use-fadeInDown 		:	false !default;
+$use-fadeInDown 		:	true !default;
 $use-fadeInDownBig 		:	false !default;
 $use-fadeInLeft 		:	false !default;
 $use-fadeInLeftBig 		:	false !default;
