@@ -79,31 +79,28 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="/dist/scripts/main.js"></script>
-    <script src="/dist/scripts/midnight.min.js"></script>
-    <script src="/dist/scripts/scrollTo.min.js"></script>
 
     <script src="https://maps.googleapis.com/maps/api/js"></script>
 
     <script type="text/javascript">
             google.maps.event.addDomListener(window, 'load', init);
-        
+
             function init() {
                 var mapOptions = {
                     zoom: 14,
-                    center: new google.maps.LatLng(52.389760, 4.851040),
+                    center: new google.maps.LatLng(52.3908160, 4.856040),
                     styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#333"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#222"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":0},{"lightness":-10}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#ff686b"},{"visibility":"on"},{"saturation":"0"},{"lightness":"0"},{"gamma":"1.00"}]}]
                 };
                 var mapElement = document.getElementById('map');
                 var map = new google.maps.Map(mapElement, mapOptions);
                 var marker = new google.maps.Marker({
-                    position: new google.maps.LatLng(52.389760, 4.851040),
+                    position: new google.maps.LatLng(52.3908160, 4.856040),
                     map: map,
                     title: 'Bitdev!'
                 });
             }
         </script>
         <script>
-            $('#click-cover #click-team #click-contact #click-down').scrollTo();
 
         </script>
 
