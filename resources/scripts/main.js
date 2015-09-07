@@ -20,6 +20,7 @@ $("#click-down").click(function() {
 });
 
 $( document ).ready(function() {
+  $('.isabelle, .teun, .bob').addClass('hide-opac');
 
 var header = new Waypoint({
   element: document.getElementById('team'),
@@ -34,9 +35,9 @@ var header = new Waypoint({
 var team = new Waypoint({
   element: document.getElementById('team'),
   handler: function() {
-   $(".isabelle").addClass('show, fadeIn');
-   $(".teun").addClass('show, fadeIn');
-   $(".bob").addClass('show, fadeIn');
+   $(".isabelle").addClass('show-opac, fadeIn');
+   $(".teun").addClass('fadeIn');
+   $(".bob").fadeIn();
   },
   offset: '70%'
 });
