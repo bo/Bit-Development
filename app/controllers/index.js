@@ -14,43 +14,35 @@ router.get('/', function(req, res, next) {
 	});
 });
 
-router.get('/contact', function(req, res, next) {
-	res.render('layouts/contact', {
-		title: 'Contact',
-		error: req.flash('error'),
-		success: req.flash('success'),
-	});
-});
-
-router.post('/contact', function(req, res, next) {
+router.post('/', function(req, res, next) {
 	var Trans, body;
 
-	var required = ['email', 'name', 'message'];
+	var required = ['name', 'email', 'message'];
 	for (var i = 0; i < required.length; i++) {
 		if (!req.body[required[i]]) {
-			req.flash('error', 'Please complete all required fields');
+			req.flash('error', 'Gelieve alle velden invullen');
 			return res.redirect('back');
 		}
 	}
 
 	Trans = nodemailer.createTransport(smtpTrans(config.email));
 
-	body = "Name: " + req.body.name + "\r\n";
+	body = "Naam: " + req.body.name + "\r\n";
 	body += "Email: " + req.body.email + "\r\n";
-	body += "Message: \r\n";
+	body += "Bericht: \r\n";
 	body += req.body.message;
 
 	Trans.sendMail({
 		from: req.body.name + " &gt;" + req.body.email + "&lt;",
 		to: config.email.receipant,
-		subject: 'You got a mail from ' + req.body.name,
+		subject: 'Je heb mail van bitdev ' + req.body.name,
 		text: body,
 	}, function(err, info) {
 		if (err) {
 			console.error(err);
-			req.flash('error', 'Error try again later.');
+			req.flash('error', 'Error probeer later opnieuw');
 		} else {
-			req.flash('success', 'Message Send.');
+			req.flash('success', 'Bericht is verstuurd');
 		}
 		res.redirect('back');
 	});

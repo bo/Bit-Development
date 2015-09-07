@@ -1,3 +1,15 @@
+{{#if success}}
+        <div class="alert alert-success" role="alert">
+            {{success}}
+        </div>
+    {{/if}}
+
+    {{#if error}}
+        <div class="alert alert-danger" role="alert">
+            {{error}}
+        </div>
+    {{/if}}
+
 <div class="cover-main">
   <div class="cover-main-inner">
     <div class="cover-container">
@@ -90,7 +102,7 @@
   <div class="contact-container">
     <div class="row">
       <div class="col-md-6">
-          <form class="form-horizontal" action="" method="post">
+          <form class="form-horizontal" action="" method="POST">
           <fieldset>
             <legend class="text-center">Contact</legend>
 
