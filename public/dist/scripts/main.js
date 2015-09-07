@@ -37,7 +37,7 @@ var team = new Waypoint({
   handler: function() {
    $(".isabelle").addClass('show-opac, fadeIn');
    $(".teun").addClass('fadeIn');
-   $(".bob").fadeIn();
+   $(".bob").addClass('fadeIn');
   },
   offset: '70%'
 });

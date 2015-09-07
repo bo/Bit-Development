@@ -11,11 +11,11 @@ var config = {
 		port: 8080,
 		db: 'mongodb://localhost/bitdev-development',
 		email: {
-			receipant: "myemail@gmail.com",
-			service: 'Gmail',
+			receipant: "bob@bitdev.nl",
+			service: 'email',
 			auth: {
-				user: "myemail@gmail.com",
-				pass: "MyPass123",
+				user: "bob@bitdev.nl",
+				pass: "secret",
 			}
 		}
 	},
@@ -25,14 +25,14 @@ var config = {
 		app: {
 			name: 'bitdev'
 		},
-		port: 3000,
+		port: 8080,
 		db: 'mongodb://localhost/bitdev-live',
 		email: {
-			receipant: "myemail@gmail.com",
-			service: 'Gmail',
+			receipant: "bob@bitdev.nl",
+			service: 'email',
 			auth: {
-				user: "myemail@gmail.com",
-				pass: "MyPass123",
+				user: "bob@bitdev.nl",
+				pass: "secret",
 			}
 		}
 	}
