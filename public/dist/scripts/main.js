@@ -19,6 +19,9 @@ $("#click-down").click(function() {
     }, 1000);
 });
 
+$( document ).ready(function() {
+  $('.isabelle, .teun, .bob').addClass('hide');
+
 var header = new Waypoint({
   element: document.getElementById('team'),
   handler: function() {
@@ -27,4 +30,16 @@ var header = new Waypoint({
     $(".masthead-nav > .active > a").css({"color": "#000"}).css({"border-bottom-color": "#000"});
   },
   offset: '90%'
-})
+});
+
+var team = new Waypoint({
+  element: document.getElementById('team'),
+  handler: function() {
+   $(".isabelle").addClass('show, fadeIn');
+   $(".teun").addClass('show, fadeIn');
+   $(".bob").addClass('show, fadeIn');
+  },
+  offset: '70%'
+});
+
+});
