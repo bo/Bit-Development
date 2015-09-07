@@ -35,7 +35,7 @@ router.post('/', function(req, res, next) {
 	Trans.sendMail({
 		from: req.body.name + " &gt;" + req.body.email + "&lt;",
 		to: config.email.receipant,
-		subject: 'Je heb mail van bitdev ' + req.body.name,
+		subject: 'Je heb mail van bitdev, ' + req.body.name,
 		text: body,
 	}, function(err, info) {
 		if (err) {

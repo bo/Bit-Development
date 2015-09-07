@@ -1,6 +1,6 @@
 var path = require('path'),
 	rootPath = path.normalize(__dirname + '/..'),
-	env = process.env.NODE_ENV || 'development';
+	env = process.env.NODE_ENV || 'production';
 
 var config = {
 	development: {
@@ -11,10 +11,10 @@ var config = {
 		port: 8080,
 		db: 'mongodb://localhost/bitdev-development',
 		email: {
-			receipant: "bob@bitdev.nl",
-			service: 'email',
+			receipant: "info@bitdev.nl",
+			service: 'gmail',
 			auth: {
-				user: "bob@bitdev.nl",
+				user: "bitdevelopmentnl@gmail.com",
 				pass: "secret",
 			}
 		}
@@ -29,9 +29,9 @@ var config = {
 		db: 'mongodb://localhost/bitdev-live',
 		email: {
 			receipant: "bob@bitdev.nl",
-			service: 'email',
+			service: 'gmail',
 			auth: {
-				user: "bob@bitdev.nl",
+				user: "bitdevelopmentnl@gmail.com",
 				pass: "secret",
 			}
 		}
