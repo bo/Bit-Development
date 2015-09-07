@@ -20,7 +20,7 @@ $("#click-down").click(function() {
 });
 
 $( document ).ready(function() {
-  $('.isabelle, .teun, .bob').addClass('hide-opac');
+  $('.isabelle, .teun, .bob').fadeOut(0);
 
 var header = new Waypoint({
   element: document.getElementById('team'),
@@ -35,11 +35,11 @@ var header = new Waypoint({
 var team = new Waypoint({
   element: document.getElementById('team'),
   handler: function() {
-   $(".isabelle").addClass('show-opac, fadeIn');
-   $(".teun").addClass('fadeIn');
-   $(".bob").addClass('fadeIn');
+   $(".isabelle").fadeIn(600);
+   $(".teun").delay(300).fadeIn(600);
+   $(".bob").delay(600).fadeIn(600);
   },
-  offset: '70%'
+  offset: '60%'
 });
 
 });

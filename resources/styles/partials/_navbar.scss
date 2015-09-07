@@ -48,14 +48,14 @@
 .masthead-nav > li > a:hover,
 .masthead-nav > li > a:focus {
   background-color: transparent;
-  border-bottom-color: $white;
+  border-bottom-color: $darkgray;
   transition: ease-in-out 0.2s;
 }
 
 .masthead-nav > .active > a,
 .masthead-nav > .active > a:hover,
 .masthead-nav > .active > a:focus {
-  border-bottom-color: $white;
+  border-bottom-color: $darkgray;
 }
 
 @media (min-width: 768px) {
